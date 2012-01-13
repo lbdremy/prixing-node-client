@@ -10,7 +10,7 @@
 <pre>
    <code>
       // Dependencies
-      var prixing = require('prixing');
+      var prixing = require('prixing-client');
 
       // Create a Client
       var apikey = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxx' // Put your own apikey
