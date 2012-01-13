@@ -1,4 +1,5 @@
 #A [Prixing](http://www.prixing.fr/) API Client library
+[![](https://secure.travis-ci.org/lbdremy/prixing-node-client.png)](http://travis-ci.org/#!/lbdremy/prixing-node-client)
 
 ##Install
 
