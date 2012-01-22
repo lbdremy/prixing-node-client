@@ -2,39 +2,36 @@
 [![](https://secure.travis-ci.org/lbdremy/prixing-node-client.png)](http://travis-ci.org/#!/lbdremy/prixing-node-client)
 
 ##Install
-
-`npm install prixing-client`
-
+```
+npm install prixing-client
+```
 ##Usage
 
-<pre>
-   <code>
-      // Dependencies
-      var prixing = require('prixing-client');
+```js
+// Dependencies
+var prixing = require('prixing-client');
 
-      // Create a Client
-      var apikey = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxx' // Put your own apikey
-      var client = prixing.createClient(apikey);
+// Create a Client
+var apikey = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxx' // Put your own apikey
+var client = prixing.createClient(apikey);
 
-      // Get a product using its EAN (bar code)
-      var ean = '3017624044003' //NUTELLA stuff
-      client.getProduct(ean,function(err,data){
-         if(err){
-            console.log('ERROR: ' + err);
-         }else{
-            console.log('INFOS: ' + JSON.stringify(data));
-         }
-      });
-
-      //Done!
-            
-   </code>
-</pre>
+// Get a product using its EAN (bar code)
+var ean = '3017624044003' //NUTELLA stuff
+client.getProduct(ean,function(err,data){
+   if(err){
+      console.log('ERROR: ' + err);
+   }else{
+      console.log('INFOS: ' + JSON.stringify(data));
+   }
+});
+```
 
 ##Test
+By default the test suite runs isolated against a mock of the prixing API. If you want to run the test suite against the prixing API, you have to edit the file /test/config.json; set the value of the key `mocked` with `false` and set the value of the key `apikey` with your own key.
 
-In the wild:
-`npm test`
+```
+npm test
+```
 
 ##Licence
 
