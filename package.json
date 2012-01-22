@@ -7,7 +7,7 @@
   "name": "prixing-client",
   "main": "./main",
   "description": "A Prixing API library. Prixing is a product comparator service based on bar code to find the lowest prices.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/lbdremy/prixing-node-client.git"
