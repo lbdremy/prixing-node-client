@@ -19,7 +19,7 @@ if(mocked){
    // Mock of the Prixing API
    //nock.recorder.rec();
 
-   nock('http://www.prixing.fr')
+   nock('http://v1.prixing.fr')
      .get('/api/v1/ean/0000000000001?key=' + apikey)
      .reply(200, "{ \"code\":415, \"erreur\":\"EAN invalide\" }\n", { date: 'Wed, 18 Jan 2012 09:37:35 GMT',
      server: 'Apache/2.2.16 (Debian)',
